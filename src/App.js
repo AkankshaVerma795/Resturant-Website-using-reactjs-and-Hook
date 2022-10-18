@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+// import './App.css';
 
-function App() {
+// function App() {
+//   return (
+  
+//     <div>
+//     <MyName/>
+//     <h1>Hello World {3+3}</h1>
+//     <img src="" alt=" "/>
+//     </div>
+//   );
+// }
+// const MyName=()=>{
+//   return (
+// <h1>Nested Component hai ye esko App Component ke andr call kiya hai.</h1>
+//   );
+// }
+// export default App;
+// 
+import React from 'react'
+import Resturant from './Components/Basics/Resturant'
+import UseState from './Components/Basics/Hooks/UseState';
+import UseEffect from './Components/Basics/Hooks/UseEffect';
+import UseReducer from './Components/Basics/Hooks/UseReducer';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+   {/**  <UseState />
+    <UseEffect />
+  <UseReducer/>**/}
+    <Resturant></Resturant>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
